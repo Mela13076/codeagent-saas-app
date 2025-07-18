@@ -1,13 +1,13 @@
-export const subjects = [
-  "maths",
-  "language",
-  "science",
-  "history",
-  "coding",
-  "economics",
+export const categories = [
+  "programming",
+  "Data Structures & Algorithms",
+  "Machine Learning & AI",
+  "Web Development",
+  "Computer Systems & Networks",
+  "Data Science & Analytics",
 ];
 
-export const subjectsColors = {
+export const categoryColors = {
   science: "#E5D0FF",
   maths: "#FFDA6E",
   language: "#BDE7FF",
@@ -24,7 +24,7 @@ export const voices = {
 export const recentSessions = [
   {
     id: "1",
-    subject: "science",
+    category: "science",
     name: "Neura the Brainy Explorer",
     topic: "Neural Network of the Brain",
     duration: 45,
@@ -32,7 +32,7 @@ export const recentSessions = [
   },
   {
     id: "2",
-    subject: "maths",
+    category: "maths",
     name: "Countsy the Number Wizard",
     topic: "Derivatives & Integrals",
     duration: 30,
@@ -40,7 +40,7 @@ export const recentSessions = [
   },
   {
     id: "3",
-    subject: "language",
+    category: "language",
     name: "Verba the Vocabulary Builder",
     topic: "English Literature",
     duration: 30,
@@ -48,7 +48,7 @@ export const recentSessions = [
   },
   {
     id: "4",
-    subject: "coding",
+    category: "coding",
     name: "Codey the Logic Hacker",
     topic: "Intro to If-Else Statements",
     duration: 45,
@@ -56,7 +56,7 @@ export const recentSessions = [
   },
   {
     id: "5",
-    subject: "history",
+    category: "history",
     name: "Memo, the Memory Keeper",
     topic: "World Wars: Causes & Consequences",
     duration: 15,
@@ -64,7 +64,7 @@ export const recentSessions = [
   },
   {
     id: "6",
-    subject: "economics",
+    category: "economics",
     name: "The Market Maestro",
     topic: "The Basics of Supply & Demand",
     duration: 10,

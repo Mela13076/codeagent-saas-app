@@ -96,7 +96,7 @@ Figma designs for core pages (Home, Agent Builder, Dashboard) can be found in [`
 - 📱 Mobile responsiveness planned
 
 ---
-
+<!-- 
 ## 🧪 Local Setup Instructions
 
 1. Clone the repo  
@@ -142,5 +142,5 @@ Created by **[Amelia](https://github.com/your-username)**
 Feel free to reach out via GitHub or open an issue!
 
 ---
-
+ -->
 

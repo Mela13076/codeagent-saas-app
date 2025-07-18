@@ -5,7 +5,7 @@
 //   accountId: string;
 // };
 
-enum Subject {
+enum Category {
   maths = "maths",
   language = "language",
   science = "science",
@@ -17,28 +17,28 @@ enum Subject {
   business = "business",
 }
 
-type Companion = Models.DocumentList<Models.Document> & {
+type Agent = Models.DocumentList<Models.Document> & {
   $id: string;
   name: string;
-  subject: Subject;
+  category: Category;
   topic: string;
   duration: number;
   bookmarked: boolean;
 };
 
-interface CreateCompanion {
+interface CreateAgent {
   name: string;
-  subject: string;
+  category: string;
   topic: string;
   voice: string;
   style: string;
   duration: number;
 }
 
-interface GetAllCompanions {
+interface GetAllAgents {
   limit?: number;
   page?: number;
-  subject?: string | string[];
+  category?: string | string[];
   topic?: string | string[];
 }
 
@@ -71,9 +71,9 @@ interface SavedMessage {
   content: string;
 }
 
-interface CompanionComponentProps {
-  companionId: string;
-  subject: string;
+interface AgentComponentProps {
+  agentId: string;
+  category: string;
   topic: string;
   name: string;
   userName: string;
