@@ -24,50 +24,51 @@ export const voices = {
 export const recentSessions = [
   {
     id: "1",
-    category: "science",
-    name: "Neura the Brainy Explorer",
-    topic: "Neural Network of the Brain",
-    duration: 45,
-    color: "#E5D0FF",
+    category: "Programming",
+    name: "Lexi the Python Pro",
+    topic: "Python Basics & Syntax",
+    duration: 30,
+    color: "#D9F99D", // soft green
   },
   {
     id: "2",
-    category: "maths",
-    name: "Countsy the Number Wizard",
-    topic: "Derivatives & Integrals",
-    duration: 30,
-    color: "#FFDA6E",
+    category: "Machine Learning",
+    name: "Mira the Model Mentor",
+    topic: "Intro to Supervised Learning",
+    duration: 45,
+    color: "#FBCFE8", // light pink
   },
   {
     id: "3",
-    category: "language",
-    name: "Verba the Vocabulary Builder",
-    topic: "English Literature",
+    category: "Data Science",
+    name: "Delta the Data Wrangler",
+    topic: "Exploratory Data Analysis with Pandas",
     duration: 30,
-    color: "#BDE7FF",
+    color: "#BFDBFE", // light blue
   },
   {
     id: "4",
-    category: "coding",
-    name: "Codey the Logic Hacker",
-    topic: "Intro to If-Else Statements",
-    duration: 45,
-    color: "#FFC8E4",
+    category: "Algorithms",
+    name: "Algo the Path Finder",
+    topic: "Depth-First vs Breadth-First Search",
+    duration: 40,
+    color: "#FDE68A", // yellow
   },
   {
     id: "5",
-    category: "history",
-    name: "Memo, the Memory Keeper",
-    topic: "World Wars: Causes & Consequences",
-    duration: 15,
-    color: "#FFECC8",
+    category: "Web Development",
+    name: "Nova the Frontend Guide",
+    topic: "Responsive Layouts with Flexbox",
+    duration: 20,
+    color: "#C4B5FD", // violet
   },
   {
     id: "6",
-    category: "economics",
-    name: "The Market Maestro",
-    topic: "The Basics of Supply & Demand",
-    duration: 10,
-    color: "#C8FFDF",
+    category: "Computer Systems",
+    name: "Chip the OS Whisperer",
+    topic: "How Processes Work in Operating Systems",
+    duration: 25,
+    color: "#A7F3D0", // mint green
   },
 ];
+

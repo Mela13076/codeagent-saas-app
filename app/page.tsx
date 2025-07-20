@@ -3,6 +3,7 @@ import {Button} from "@/components/ui/button";
 import AgentCard from '@/components/AgentCard';
 import AgentsList from '@/components/AgentsList';
 import Cta from '@/components/CTA';
+import { recentSessions } from '@/constants';
 
 // This is the main page component
 // It renders a list of popular agents and a call to action section
@@ -13,15 +14,15 @@ import Cta from '@/components/CTA';
 const Page = () => {
   return (
     <div>
-      <h1 className="text-2xl underline">Popular Agents</h1>
-        <section className='home-section'>
+      <h1 className="text-2xl underline pt-4 pl-4">Popular Agents</h1>
+        <section className='home-section p-2'>
           <AgentCard
             id="234"
             name="Ada the Algorithm Architect"
             topic="Mastering sorting algorithms like Bubble Merge and Quick Sort"
             category="Algorithms"
             duration={30}
-            color="#f0f4ff"
+            color="#FDE68A"
           />
           <AgentCard
             id="312"
@@ -29,7 +30,7 @@ const Page = () => {
             topic="Learn Python fundamentals: variables loops and functions"
             category="Programming"
             duration={25}
-            color="#e9ffe3"
+            color="#D9F99D"
           />
           <AgentCard
             id="478"
@@ -37,11 +38,15 @@ const Page = () => {
             topic="Explore core concepts of machine learning and model training"
             category="Machine Learning"
             duration={45}
-            color="#fff0f5"
+            color="#FBCFE8"
           />
         </section>
-        <section className='home-section'>
-          <AgentsList />
+        <section className='home-section p-4'>
+          <AgentsList 
+            title="All Agents"
+            agents = {recentSessions}
+            classNames = "w-2/3 max-lg:w-full"
+          />
           <Cta />
         </section>
     </div>
