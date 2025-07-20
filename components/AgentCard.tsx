@@ -20,13 +20,13 @@ const AgentCard = ({ id, name, topic, category, duration, color }: AgentCardProp
             </button>
         </div>
         <h2 className="text-2xl font-bold">{name}</h2>
-        <p className="text-sm">{topic}</p>
+        <p className="text-sm">Topic: {topic}</p>
         <div className="flex items-center gap-2">
             <Image src="/icons/clock.svg" alt="Clock" width={16} height={16} />
             <p className="text-sm">{duration} minutes</p>
         </div>
         <Link href={`/agents/${id}`} className="w-full">
-            <button className="btn-primary w-full justify-center">Open Lesson</button>
+            <button className="btn-primary w-full justify-center">Open Session</button>
         </Link>
         
     </article>
