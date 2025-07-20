@@ -3,6 +3,7 @@ import {Button} from "@/components/ui/button";
 import AgentCard from '@/components/AgentCard';
 import AgentsList from '@/components/AgentsList';
 import Cta from '@/components/CTA';
+import { recentSessions } from '@/constants';
 
 // This is the main page component
 // It renders a list of popular agents and a call to action section
@@ -41,7 +42,11 @@ const Page = () => {
           />
         </section>
         <section className='home-section'>
-          <AgentsList />
+          <AgentsList 
+            title="All Agents"
+            agents = {recentSessions}
+            classNames = "w-2/3 max-lg:w-full"
+          />
           <Cta />
         </section>
     </div>
